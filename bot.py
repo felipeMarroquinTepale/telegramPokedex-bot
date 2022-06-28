@@ -36,13 +36,13 @@ def message_response(update,context):
         response = (f"<b>¡Hey ¿como estas? ! {username}, ingresa un nombre valido de un pokemon o dame un ID del 1-890 para darte informacion de tu pokemon </b>")
     else:
         #Vamos a extraer con el ID o name los datos de la api pokedex que se encuentra en el pokedex.py
-        response = pokedex(text)
-        if response != None:
+        response,photo_url = pokedex(text)
+        if response != None and photo_url != None:
             chat_id = update.message.chat_id
-            #Aqui ira el codigo para poder dar una imagen del pokemon
-
+            context.bot.send_photo(chat_id=chat_id,photo=photo_url)
         else:
             response = "Lo siento amigo no te entiendo. Por favor ingrese un ID o nombre valido de un pokemon para poder obtener informacion "
+
     update.message.reply_text(response,parse_mode='HTML')
 
 

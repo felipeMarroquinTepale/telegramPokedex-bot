@@ -6,7 +6,7 @@ import requests
 
 def pokedex(id_name):
     #print('Este metodo sera para consumir la api de pokedex y seleccionar algunas caracteristicas de los pokemones mediante un ID')
-    # try:
+    try:
         output= ""
         url = "https://pokeapi.co/api/v2/pokemon/{}/"
         #get request for API information retrieval
@@ -43,14 +43,21 @@ def pokedex(id_name):
 
         print(output)
 
+        if information['id'] <= 890:
+            photo_url = f"https://pokeres.bastionbot.org/images/pokemon/{information['id']}.png"
+            # photo_url = f"https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/{information['id']}.svg"
+            # photo_url = f"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{information['id']}.png "
+        else:
+            photo_url = None
 
 
-    # except json.decoder.JSONDecodeError:
-    #     output = None
-    #     # photo_url = None
-    # # return output,photo_url
-    # return output
+
+    except json.decoder.JSONDecodeError:
+        output = None
+        photo_url = None
+    return output,photo_url
 
 
-if __name__== "__main__" :
-    pokedex('pikachu')
+
+
+
