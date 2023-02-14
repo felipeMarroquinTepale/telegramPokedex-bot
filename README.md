@@ -4,4 +4,4 @@ Este es un bot de Pokedex hecho en telegram que brinda información sobre un Pok
 
 #vista general de la aplicacion
 
-[![Captura-de-pantalla-de-2023-02-14-11-10-01.png](https://i.postimg.cc/gc3ZnzyB/Captura-de-pantalla-de-2023-02-14-11-10-01.png)](https://postimg.cc/Wtb3yPHM)
+[![Captura-de-pantalla-de-2023-02-14-11-10-01-1.png](https://i.postimg.cc/NMJPX8wB/Captura-de-pantalla-de-2023-02-14-11-10-01-1.png)](https://postimg.cc/N9X4qHMz)
