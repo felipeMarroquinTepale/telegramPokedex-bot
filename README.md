@@ -1,5 +1,5 @@
 # telegramPokedex-bot
-Este es un bot de Pokedex hecho en telegram que brinda información sobre un Pokémon en especifico cuando el usuario proporciona el nombre o el ID del Pokémon. 
+Este es un bot de Pokedex utilizando la libreria de python-telegram-bot, este bot  brinda información sobre un Pokémon en especifico cuando el usuario proporciona el nombre o el ID del Pokémon. 
 
 
 #vista general de la aplicacion
